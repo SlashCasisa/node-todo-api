@@ -74,6 +74,7 @@ app.post('/getMenu', async (req, res, next) => {
       token
     } = req.body;
     res.json({
+      roles: 'admin',
       menus: [{
         path: '/',
         meta: {
